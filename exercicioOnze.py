@@ -15,10 +15,10 @@ if contaMinuto >= 60:
     contaHora = contaHora + 1
     contaMinuto = contaMinuto - 60
 
-if contaHora == 12 :
-    contaHora = contaHora - 12
+if contaHora >= 24 :
+    contaHora -= 24
 else:
-    contaHora = contaHora - 24
+    contaHora -= 12
 
 #horarioFinal = ((contaHora + contaMinuto)/60) - 12
 
